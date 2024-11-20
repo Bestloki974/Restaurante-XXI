@@ -1,0 +1,139 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #fdf6f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del formulario */
+form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de formulario */
+form h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #d35400;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+/* Grupo de formularios */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #4a4a4a;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #d35400;
+    box-shadow: 0 4px 8px rgba(211, 84, 0, 0.2);
+    outline: none;
+}
+
+/* Botones */
+button,
+.btn-cancelar {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px; /* Bordes redondeados */
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Botón Guardar Cambios */
+button {
+    background-color: #27ae60;
+    margin-right: 1rem;
+}
+
+button:hover {
+    background-color: #2ecc71;
+    transform: scale(1.05);
+}
+
+/* Botón Cancelar */
+.btn-cancelar {
+    background-color: #e74c3c;
+    text-decoration: none;
+}
+
+.btn-cancelar:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Mensaje de Error */
+.error {
+    color: #e74c3c;
+    background-color: #fce4e4;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividad */
+@media (max-width: 480px) {
+    form {
+        padding: 1.5rem;
+    }
+
+    button,
+    .btn-cancelar {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,104 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fdf6f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Título */
+h2 {
+    color: #d35400;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+/* Etiquetas */
+label {
+    font-weight: bold;
+    color: #4a4a4a;
+    display: block;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+/* Selector */
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus {
+    border-color: #d35400;
+    box-shadow: 0px 4px 8px rgba(211, 84, 0, 0.2);
+    outline: none;
+}
+
+/* Botones */
+button, .btn-cancelar {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón Eliminar */
+.btn-eliminar {
+    background-color: #e74c3c;
+    border: none;
+}
+
+.btn-eliminar:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Botón Cancelar */
+.btn-cancelar {
+    background-color: #6c757d;
+    margin-left: 10px;
+}
+
+.btn-cancelar:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}
+
+/* Mensaje de Error */
+.error {
+    color: #e74c3c;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}

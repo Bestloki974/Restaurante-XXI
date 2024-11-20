@@ -1,0 +1,195 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #fdf6f0;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Encabezado */
+.header {
+    background: linear-gradient(90deg, #d35400, #e67e22);
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header .logo h2 {
+    font-size: 1.8rem;
+}
+
+.header .nav-menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header .nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.header .nav-menu ul li a:hover {
+    background-color: #e67e22;
+}
+
+/* Contenedor del Formulario */
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    margin-bottom: 1.5rem;
+    color: #d35400;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Campos del Formulario */
+.container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.container input[type="text"],
+.container input[type="number"],
+.container input[type="datetime-local"],
+.container select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container input:focus,
+.container select:focus {
+    border-color: #d35400;
+    box-shadow: 0px 4px 8px rgba(211, 84, 0, 0.2);
+    outline: none;
+}
+
+/* Botones */
+.btn-editar,
+.btn-eliminar,
+.btn-guardar,
+.btn-cancelar {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón Guardar */
+.btn-guardar {
+    background-color: #27ae60;
+}
+
+.btn-guardar:hover {
+    background-color: #2ecc71;
+    transform: scale(1.05);
+}
+
+/* Botón Cancelar */
+.btn-cancelar {
+    background-color: #6c757d;
+    margin-left: 10px;
+}
+
+.btn-cancelar:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}
+
+/* Botón Editar */
+.btn-editar {
+    background-color: #f1c40f;
+}
+
+.btn-editar:hover {
+    background-color: #f39c12;
+    transform: scale(1.05);
+}
+
+/* Botón Eliminar */
+.btn-eliminar {
+    background-color: #e74c3c;
+}
+
+.btn-eliminar:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Tabla de Pedidos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #f3e0d8;
+}
+
+table th {
+    background-color: #fbe4d5;
+    color: #d35400;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #fffaf3;
+}
+
+table tr:hover {
+    background-color: #f9e3d9;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}

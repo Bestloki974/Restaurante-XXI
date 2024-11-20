@@ -1,0 +1,131 @@
+/* Estilo general */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #2c3e50;
+    background-color: #faf3e0; /* Fondo claro con un tono cálido */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+.header {
+    background: linear-gradient(90deg, #d35400, #e67e22); /* Tonos naranjas */
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 15px 15px; /* Bordes redondeados en la parte inferior */
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 20px; /* Botones redondeados */
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+    background-color: #f39c12;
+}
+
+/* Título de bienvenida */
+h1 {
+    color: #d35400;
+    font-size: 26px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Sección principal */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #d35400;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #fff;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #fbe3d3; /* Fondo cálido */
+    color: #d35400;
+    font-weight: 600;
+}
+
+/* Botones de Accesos Rápidos */
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #e67e22;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px; /* Totalmente redondeados */
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #d35400;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para los textos y enlaces */
+a {
+    color: #d35400;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e67e22;
+}

@@ -1,0 +1,200 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(90deg, #d35400, #e67e22);
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header .logo h2 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-menu ul li a:hover {
+    background-color: #e67e22;
+}
+
+/* Título principal */
+h1 {
+    margin: 20px;
+    font-size: 2rem;
+    color: #d35400;
+    text-align: center;
+}
+
+/* Botones de Acción */
+.btn-agregar-pedido, .btn-agregar-proveedor, .btn-eliminar-proveedor {
+    padding: 12px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-agregar-pedido {
+    background-color: #27ae60;
+}
+
+.btn-agregar-pedido:hover {
+    background-color: #2ecc71;
+    transform: scale(1.05);
+}
+
+.btn-agregar-proveedor {
+    background-color: #d35400;
+}
+
+.btn-agregar-proveedor:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+.btn-eliminar-proveedor {
+    background-color: #e74c3c;
+}
+
+.btn-eliminar-proveedor:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Contenedor de Pedidos */
+.pedidos-container {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabla de Pedidos */
+.pedidos-container table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pedidos-container table th,
+.pedidos-container table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #f3e0d8;
+    font-size: 0.95rem;
+}
+
+.pedidos-container table th {
+    background-color: #fbe4d5;
+    color: #d35400;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.pedidos-container table tr:nth-child(even) {
+    background-color: #fffaf3;
+}
+
+.pedidos-container table tr:hover {
+    background-color: #f9e3d9;
+    cursor: pointer;
+}
+
+/* Estados en Pedidos */
+.estado-pendiente {
+    background-color: #f1c40f;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.estado-transito {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.estado-recibido {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.estado-cancelado {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Botón Editar */
+.btn-editar {
+    color: #27ae60;
+    font-weight: bold;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.btn-editar:hover {
+    color: #2ecc71;
+    transform: scale(1.05);
+}
+
+/* Botón Eliminar */
+.btn-eliminar {
+    color: #e74c3c;
+    font-weight: bold;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.btn-eliminar:hover {
+    color: #c0392b;
+    transform: scale(1.05);
+}

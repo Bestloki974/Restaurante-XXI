@@ -1,0 +1,133 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(90deg, #d35400, #e67e22);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-content .logo h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-menu ul li a:hover {
+    background-color: #e67e22;
+}
+
+/* Contenedor de Reportes */
+.reportes-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Secciones de Reportes */
+.reporte-seccion {
+    margin-bottom: 30px;
+}
+
+.reporte-seccion h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #d35400;
+    text-align: left;
+    border-bottom: 2px solid #fbe4d5;
+    padding-bottom: 5px;
+}
+
+/* Tablas */
+.reporte-seccion table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reporte-seccion table th,
+.reporte-seccion table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #f3e0d8;
+    font-size: 0.95rem;
+}
+
+.reporte-seccion table th {
+    background-color: #fbe4d5;
+    color: #d35400;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.reporte-seccion table tr:nth-child(even) {
+    background-color: #fffaf3;
+}
+
+.reporte-seccion table tr:hover {
+    background-color: #f9e3d9;
+    cursor: pointer;
+}
+
+/* Botón Descargar PDF */
+.btn-descargar {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #d35400;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-descargar:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Ingresos y Egresos Totales */
+.ingresos-egresos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #4a4a4a;
+}
+
+.ingresos-egresos span {
+    font-weight: bold;
+    color: #d35400;
+}
